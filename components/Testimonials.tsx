@@ -7,14 +7,14 @@ const Testimonials: React.FC = () => {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h4 className="text-blue-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Testimonials</h4>
+          <h4 className="text-primary font-bold uppercase tracking-[0.2em] text-xs mb-4">Testimonials</h4>
           <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900">What Our Clients Say</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {TESTIMONIALS.map((t, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="bg-slate-50/50 p-10 rounded-2xl border border-slate-100 flex flex-col h-full"
             >
               {/* Star Rating */}
@@ -33,7 +33,7 @@ const Testimonials: React.FC = () => {
 
               {/* Author Info */}
               <div className="flex items-center mt-auto">
-                <div className="w-12 h-12 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                <div className="w-12 h-12 bg-secondary/20 text-primary rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
                   {t.name.split(' ').map(n => n[0]).join('').substring(0, 1)}
                 </div>
                 <div>

@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`text-sm font-semibold transition-colors duration-200 ${isScrolled ? 'text-slate-600 hover:text-blue-700' : 'text-slate-200 hover:text-white'
+                className={`text-sm font-semibold transition-colors duration-200 ${isScrolled ? 'text-slate-600 hover:text-primary' : 'text-slate-200 hover:text-white'
                   }`}
               >
                 {item.label}
@@ -41,8 +41,8 @@ const Navbar: React.FC = () => {
             <a
               href="#contact"
               className={`px-5 py-2 rounded-md text-sm font-bold transition-all ${isScrolled
-                  ? 'bg-blue-700 text-white hover:bg-blue-800'
-                  : 'bg-white text-blue-700 hover:bg-slate-100'
+                ? 'bg-primary text-white hover:bg-slate-900'
+                : 'bg-white text-primary hover:bg-slate-100'
                 }`}
             >
               GET A QUOTE
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-4 text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-blue-700"
+                className="block px-3 py-4 text-base font-semibold text-slate-700 hover:bg-slate-50 hover:text-primary"
               >
                 {item.label}
               </a>
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="block w-full text-center bg-blue-700 text-white px-3 py-4 rounded-md font-bold"
+              className="block w-full text-center bg-primary text-white px-3 py-4 rounded-md font-bold"
             >
               GET A QUOTE
             </a>

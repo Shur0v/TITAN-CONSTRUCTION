@@ -22,12 +22,12 @@ const Hero: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-        <span className="inline-block px-4 py-1 mb-6 text-xs font-bold tracking-widest uppercase bg-blue-700 rounded-full">
+        <span className="inline-block px-4 py-1 mb-6 text-xs font-bold tracking-widest uppercase bg-primary rounded-full">
           Quality Built Since 1998
         </span>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
           Building the Future <br />
-          <span className="text-blue-400">Restoring the Past.</span>
+          <span className="text-secondary">Restoring the Past.</span>
         </h1>
         <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
           From large-scale commercial developments to custom residential homes, Titan Construction delivers professional excellence on every project.
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#contact"
-            className="px-8 py-4 bg-blue-700 hover:bg-blue-800 text-white rounded font-bold transition-all text-lg shadow-lg hover:shadow-blue-900/20"
+            className="px-8 py-4 bg-primary hover:bg-slate-900 text-white rounded font-bold transition-all text-lg shadow-lg hover:shadow-primary/50"
           >
             Get a Free Quote
           </a>

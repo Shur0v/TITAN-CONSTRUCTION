@@ -17,18 +17,18 @@ function App() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <Navbar />
-      
+
       {/* Page Content */}
       <main>
         {/* Section 1: Hero */}
         <Hero />
-        
+
         {/* Section 2: Numbers/Stats Banner */}
         <Stats />
-        
+
         {/* Section 3: Detailed About Us */}
         <About />
-        
+
         {/* Section 4: Grid of Services */}
         <Services />
 
@@ -43,7 +43,7 @@ function App() {
           <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-8">Ready to start your next construction project?</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact" className="px-8 py-4 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded transition-all">
+              <a href="#contact" className="px-8 py-4 bg-primary hover:bg-slate-900 text-white font-bold rounded transition-all">
                 Request a Proposal
               </a>
               <a href="tel:+15551234567" className="px-8 py-4 border-2 border-slate-900 text-slate-900 font-bold rounded hover:bg-slate-900 hover:text-white transition-all">
@@ -67,9 +67,9 @@ function App() {
       <Footer />
 
       {/* Back to top button */}
-      <button 
+      <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-6 right-6 hidden md:flex w-12 h-12 bg-blue-700 text-white rounded-full shadow-lg items-center justify-center hover:bg-blue-800 transition-all z-40 active:scale-90"
+        className="fixed bottom-6 right-6 hidden md:flex w-12 h-12 bg-primary text-white rounded-full shadow-lg items-center justify-center hover:bg-slate-900 transition-all z-40 active:scale-90"
         aria-label="Back to top"
       >
         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
