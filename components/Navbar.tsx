@@ -15,19 +15,15 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
-      }`}
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <div className={`w-8 h-8 bg-blue-700 rounded mr-2 flex items-center justify-center text-white font-bold`}>T</div>
-            <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
-              TITAN CONSTRUCTION
-            </span>
+            <img src="/logo.png" alt="Titan Construction" className="h-10" />
           </div>
 
           {/* Desktop Nav */}
@@ -36,20 +32,18 @@ const Navbar: React.FC = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`text-sm font-semibold transition-colors duration-200 ${
-                  isScrolled ? 'text-slate-600 hover:text-blue-700' : 'text-slate-200 hover:text-white'
-                }`}
+                className={`text-sm font-semibold transition-colors duration-200 ${isScrolled ? 'text-slate-600 hover:text-blue-700' : 'text-slate-200 hover:text-white'
+                  }`}
               >
                 {item.label}
               </a>
             ))}
-            <a 
-              href="#contact" 
-              className={`px-5 py-2 rounded-md text-sm font-bold transition-all ${
-                isScrolled 
-                ? 'bg-blue-700 text-white hover:bg-blue-800' 
-                : 'bg-white text-blue-700 hover:bg-slate-100'
-              }`}
+            <a
+              href="#contact"
+              className={`px-5 py-2 rounded-md text-sm font-bold transition-all ${isScrolled
+                  ? 'bg-blue-700 text-white hover:bg-blue-800'
+                  : 'bg-white text-blue-700 hover:bg-slate-100'
+                }`}
             >
               GET A QUOTE
             </a>
@@ -59,9 +53,8 @@ const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md transition-colors ${
-                isScrolled ? 'text-slate-600' : 'text-white'
-              }`}
+              className={`p-2 rounded-md transition-colors ${isScrolled ? 'text-slate-600' : 'text-white'
+                }`}
             >
               {isOpen ? (
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

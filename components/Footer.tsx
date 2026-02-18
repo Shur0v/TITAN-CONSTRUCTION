@@ -7,12 +7,11 @@ const Footer: React.FC = () => {
     <footer className="bg-[#0f172a] text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-blue-600 rounded flex items-center justify-center text-white font-black text-xl mr-3">T</div>
-              <span className="text-xl font-extrabold tracking-tight">TITAN CONSTRUCTION</span>
+              <img src="/logo.png" alt="Titan Construction" className="h-12" />
             </div>
             <p className="text-slate-400 leading-relaxed mb-8 text-sm">
               Leading the construction industry through innovation, safety, and a commitment to high-quality craftsmanship since 1998.
@@ -76,9 +75,9 @@ const Footer: React.FC = () => {
             <h4 className="text-lg font-bold mb-6 border-b border-slate-800 pb-2 inline-block">Our Newsletter</h4>
             <p className="text-slate-400 text-sm mb-4">Get the latest industry news and project updates delivered to your inbox.</p>
             <form className="flex group">
-              <input 
-                type="email" 
-                placeholder="Email address" 
+              <input
+                type="email"
+                placeholder="Email address"
                 className="bg-slate-800 border-none rounded-l px-4 py-2 w-full focus:ring-1 focus:ring-blue-600 outline-none text-white text-sm"
               />
               <button className="bg-blue-600 px-4 py-2 rounded-r hover:bg-blue-700 transition-colors flex-shrink-0">
